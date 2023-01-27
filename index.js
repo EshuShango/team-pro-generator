@@ -1,19 +1,27 @@
 //* the line below....
-// const inquirer = require('inquirer');
-//* the line below is only utilizing
+//^ const inquirer = require('inquirer');
+
+//* the line below is only utilizing what is supposed needed
 //* This will only import the prompt method from the inquirer module
 //* Quicker for a human to write
 const { prompt } = require("inquirer");
+
 //* the line below calls on the writeFileSync property,
 //* which is a method from the fs(FileSystem) module in Node.Js
-// const { writeFileSync } = require("fs");
+
+//^ const { writeFileSync } = require("fs");
+
 //* the line below could be considered more concise, but not as
 //* quick and/or clean as this ex above :const { writeFileSync } = require("fs");
-// const fs = require('fs');
-// const writeFileSync = fs.writeFileSync;
+
+//^ const fs = require('fs');
+//^ const writeFileSync = fs.writeFileSync;
+
 //* the line below could be considered cleaner and quicker
 //* for a humans to write, but not as step by step
-//* for a machine (becuase machines need exact info to run smoother lol)
+//* for a machine 
+//!(becuase machines need exact info to run smoother lol)
+
 const { writeFileSync } = require("fs");
 
 const Manager = require("./lib/Manager");
@@ -23,9 +31,11 @@ const generateHTML = require("./lib/genHTML");
 
 let employees = [];
 
+//* below we create a async function to validate that a real email is put within
+//* the Email input etc
 async function validateEmail(email) {
-  var atpos = email.indexOf("@");
-  var dotpos = email.lastIndexOf(".");
+  let atpos = email.indexOf("@");
+  let dotpos = email.lastIndexOf(".");
   if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length) {
     return "Invalid email";
   }
@@ -34,7 +44,7 @@ async function validateEmail(email) {
 
 async function validateGithub(github) {
   // https://github.com/shinnn/github-username-regex/blob/master/index.js#L1
-  var regularExpression = /^[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$/i;
+  let regularExpression = /^[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$/i;
   //* test is a method of re(regularExpression)
   if (regularExpression.test(github)) {
     return true;
@@ -111,7 +121,7 @@ const engineerQuestions = [
     type: "input",
     name: "eGithub",
     message: "What is the Engineers GitHub Username ?",
-    validate: validateGithub
+    validate: validateGithub,
   },
 ];
 const internQuestions = [
@@ -137,7 +147,9 @@ const internQuestions = [
     message: "What is the Interns School ?",
   },
 ];
-//!  ADD validation to ensure that user input is in the proper format
+//!  Added validation to ensure 
+//!that user input is in the proper format
+
 //^ utilize the following code :
 
 async function mainFn() {
@@ -176,10 +188,11 @@ async function mainFn() {
       teamFin = true;
     }
   }
-  //! ADD func that generates the html here
+  //* the lines below gen HTML with the arg of employees passed in it
+  //* and then writes the File
   const finalHTML = generateHTML(employees);
 
-  writeFileSync("workIndex.html", finalHTML);
+  writeFileSync("./output/workIndex.html", finalHTML);
 }
 
 mainFn();
