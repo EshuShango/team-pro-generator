@@ -1,4 +1,4 @@
-//* the line below....
+//* the line below imports the inquirer dependency
 //^ const inquirer = require('inquirer');
 
 //* the line below is only utilizing what is supposed needed
