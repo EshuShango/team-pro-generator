@@ -13,7 +13,7 @@ This repo contains a Node.js command-line application that takes in information 
 - [Usage](#usage-🔑) 
 - [Test](#tests-🧪) 
 - [License](#license-📝)
-- [Things i learned](#things-i-learned-📚)
+- [Things I Learned](#things-i-learned-📚)
 
 
 
@@ -45,7 +45,7 @@ within the main folder (08-Team-Pro-Generator): npm run test or npx jest
 ### Walkthrough Team Profile Generator Video:
 [WalkThrough Team Profile Generator Video]()
 
-## Things I earned
+## Things I Learned 📚
 * `Learned more about Async and Await`
 * `Node.JS and Jest our Managers of dependencies`
 * `More understanding of the power of functions and utilizing them`
@@ -55,7 +55,7 @@ within the main folder (08-Team-Pro-Generator): npm run test or npx jest
 
 
 
-### RoadMap
+### RoadMap 🧭
  * `Update the UI to be "prettier" and more responsive`
 
  * `Create a test for the genHTML file`
