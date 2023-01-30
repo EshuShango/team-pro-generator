@@ -20,7 +20,7 @@ const { prompt } = require("inquirer");
 //* the line below could be considered cleaner and quicker
 //* for a humans to write, but not as step by step
 //* for a machine 
-//!(becuase machines need exact info to run smoother lol)
+//!(because machines need exact info to run smoother lol)
 
 const { writeFileSync } = require("fs");
 
@@ -29,13 +29,15 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const generateHTML = require("./lib/genHTML");
 
+
+
 let employees = [];
 
 //* below we create a async function to validate that a real email is put within
 //* the Email input etc
 async function validateEmail(email) {
   let atpos = email.indexOf("@");
-  let dotpos = email.lastIndexOf(".");
+  let dotpos = email.lastIndexOf(".com");
   if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length) {
     return "Invalid email";
   }
@@ -190,6 +192,7 @@ async function mainFn() {
   }
   //* the lines below gen HTML with the arg of employees passed in it
   //* and then writes the File
+
   const finalHTML = generateHTML(employees);
 
   writeFileSync("./output/workIndex.html", finalHTML);
