@@ -14,6 +14,7 @@ This repo contains a Node.js command-line application that takes in information 
 - [Test](#tests-🧪) 
 - [License](#license-📝)
 - [Things I Learned](#things-i-learned-📚)
+- [RoadMap](#roadmap-🧭)
 
 
 
@@ -40,7 +41,7 @@ within the main folder (08-Team-Pro-Generator): npm run test or npx jest
 ### Walkthrough Test Video: 
 [WalkThrough Test Video](https://watch.screencastify.com/v/jfPLjIhJVnv1uLBcgx9i)
 
-![WalkThrough Test Video Gif example](./Assets/Gen-Team-Node.gif)
+![WalkThrough Test Video Gif example](./Assets/Test-Gen-Team-Node.gif)
 
 ### Walkthrough Team Profile Generator Video:
 [WalkThrough Team Profile Generator Video]()
