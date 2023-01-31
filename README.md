@@ -44,7 +44,9 @@ within the main folder (08-Team-Pro-Generator): npm run test or npx jest
 ![WalkThrough Test Video Gif example](./Assets/Test-Gen-Team-Node.gif)
 
 ### Walkthrough Team Profile Generator Video:
-[WalkThrough Team Profile Generator Video]()
+[WalkThrough Team Profile Generator Video](https://drive.google.com/file/d/15zY1SKbmMpFuXK1JUzsDDmZGLtJBTRSh/view)
+
+![WalkThrough Team Video Gif example](./Assets/Example-Gen-Team-Node.gif)
 
 ## Things I Learned 📚
 * `Learned more about Async and Await`
@@ -57,7 +59,7 @@ within the main folder (08-Team-Pro-Generator): npm run test or npx jest
 
 
 ### RoadMap 🧭
- * `Update the UI to be "prettier" and more responsive`
+ * `Updates to the CSS making the UI "prettier" and more responsive`
 
  * `Create a test for the genHTML file`
 
